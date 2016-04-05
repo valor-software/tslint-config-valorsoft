@@ -1,0 +1,49 @@
+{
+  "name": "tslint-config-valorsoft",
+  "version": "0.0.1",
+  "description": "Valor Software's TSLint config, following our styleguide",
+  "main": "index.js",
+  "scripts": {
+    "flow.changelog": "./node_modules/.bin/conventional-changelog -i CHANGELOG.md -s -p angular -v",
+    "flow.github-release": "./node_modules/.bin/conventional-github-releaser -p angular",
+    "flow.lint": "./node_modules/.bin/eslint --ignore-path .gitignore  --ext js --fix . .config",
+    "test": "npm run flow.lint && ./node_modules/.bin/mocha",
+    "preversion": "npm test",
+    "version": "npm run flow.changelog && git add -A",
+    "postversion": "git push origin master && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/valor-software/tslint-config-valorsoft.git"
+  },
+  "keywords": [
+    "styleguide",
+    "typescript",
+    "valor",
+    "valor-software",
+    "config",
+    "tslintconfig",
+    "tslint"
+  ],
+  "author": "Dmitriy Shekhovtsov <valorkin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/valor-software/tslint-config-valorsoft/issues"
+  },
+  "homepage": "https://github.com/valor-software/tslint-config-valorsoft#readme",
+  "dependencies": {
+    "codelyzer": "0.0.12",
+    "tslint": "3.7.0"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "change-case": "2.3.1",
+    "conventional-changelog-cli": "1.1.1",
+    "conventional-github-releaser": "1.1.1",
+    "eslint-config-valorsoft": "0.0.10",
+    "mocha": "2.4.5",
+    "pre-commit": "1.1.2",
+    "strip-json-comments": "2.0.1",
+    "typescript": "1.8.9"
+  }
+}

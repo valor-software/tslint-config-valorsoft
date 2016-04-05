@@ -1,0 +1,11 @@
+{
+  "extends": "./node_modules/eslint-config-valorsoft/.eslintrc.json",
+  "env": {
+    "mocha": true,
+    "node": true
+  },
+  "rules": {
+    "no-sync": 0,
+    "newline-per-chained-call": 0
+  }
+}
