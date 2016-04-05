@@ -1,8 +1,8 @@
-# Welcome to the most strict eslint config ever
-[![npm version](https://badge.fury.io/js/eslint-config-valorsoft.svg)](http://badge.fury.io/js/eslint-config-valorsoft) [![npm downloads](https://img.shields.io/npm/dm/eslint-config-valorsoft.svg)](https://npmjs.org/eslint-config-valorsoft)
-[![Build Status](https://travis-ci.org/valor-software/eslint-config-valorsoft.svg?branch=master)](https://travis-ci.org/valor-software/eslint-config-valorsoft)
-[![Dependency Status](https://david-dm.org/valor-software/eslint-config-valorsoft.svg)](https://david-dm.org/valor-software/eslint-config-valorsoft)
-[![devDependency Status](https://david-dm.org/valor-software/eslint-config-valorsoft/dev-status.svg)](https://david-dm.org/valor-software/eslint-config-valorsoft#info=devDependencies)
+# Welcome to the most strict tslint config ever
+[![npm version](https://badge.fury.io/js/tslint-config-valorsoft.svg)](http://badge.fury.io/js/tslint-config-valorsoft) [![npm downloads](https://img.shields.io/npm/dm/tslint-config-valorsoft.svg)](https://npmjs.org/tslint-config-valorsoft)
+[![Build Status](https://travis-ci.org/valor-software/tslint-config-valorsoft.svg?branch=master)](https://travis-ci.org/valor-software/tslint-config-valorsoft)
+[![Dependency Status](https://david-dm.org/valor-software/tslint-config-valorsoft.svg)](https://david-dm.org/valor-software/tslint-config-valorsoft)
+[![devDependency Status](https://david-dm.org/valor-software/tslint-config-valorsoft/dev-status.svg)](https://david-dm.org/valor-software/tslint-config-valorsoft#info=devDependencies)
 
 ## Philosophy
 - contains all rules
@@ -10,33 +10,23 @@
 - this config is highly opinionated
 
 ## Where to use
-- anywhere
-- for tests better to add `env:"node"` and disable `newline-per-chained-call` rule
+- angular2 projects or any typescript
 
-## How to use
-- install latest `npm`
-  ``` bash
-  $(sudo) npm install -g npm@latest
-  ```
-- add task `eslint` to `package.json` `script` section
-  ```
-  "eslint": "./node_modules/.bin/eslint --ignore-path .gitignore  --ext js --fix . .config",
-  ```
-- add linting to tests step `scripts` `package.json` section
-  ```bash
-  "test": "npm run eslint && ..."
-  ```
-- create `.eslintrc.json` near to you `package.json` with the following content
-  ```json
-  {
-    "extends": "./node_modules/eslint-config-valorsoft/.eslintrc.json",
-    "env": {
-      "node": true
-    }
+## Install
+```sh
+npm install tslint-config-valorsoft
+```
+
+```js
+// tslint.json
+{
+  "extends": "tslint-config-valorsoft",
+  "rules": {
+    // your customization
   }
-  ```
-- run `npm t` to check that all is working correctly
-
+}
+```
+<!--
 ## What is disabled
 - `no-eq-null` - duplicates `eqeqeq:smart`
 - `no-restricted-imports`, `no-restricted-modules`, `no-restricted-globals` - dependant on project requirements
@@ -66,7 +56,10 @@
 - `padded-blocks` - `never` add useless padding
 - `quote-props` - quote properties only `as-needed` and `keywords`
 - `no-magic-numbers` - `ignore` `-1,0,1` as most often used numbers and `ignoreArrayIndexes`, `enforceConst` are enabled
-
+-->
 ## Contribution
 - what I really appreciate is configs for IDEs
 - to change any rule you should have strong arguments and not only opinion
+
+## LICENSE
+MIT
