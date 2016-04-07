@@ -10,7 +10,7 @@ const config = require('../tslint.json');
 const options = {
   formatter: 'verbose',
   configuration: config,
-  rulesDirectory: config.rulesDirectory
+  rulesDirectory: './node_modules/codelyzer/dist/src'
 };
 const contents = fs.readFileSync(path.resolve(fileName), 'utf8');
 const ll = new Linter(fileName, contents, options);

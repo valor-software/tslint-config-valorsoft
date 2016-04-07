@@ -5,12 +5,8 @@
 [![devDependency Status](https://david-dm.org/valor-software/tslint-config-valorsoft/dev-status.svg)](https://david-dm.org/valor-software/tslint-config-valorsoft#info=devDependencies)
 
 ## Philosophy
-- contains all rules
+- contains all rules explicitely
 - almost all rules enabled
-- this config is highly opinionated
-
-## Where to use
-- angular2 projects or any typescript
 
 ## Install
 ```sh
@@ -20,7 +16,9 @@ npm install tslint-config-valorsoft
 ```js
 // tslint.json
 {
-  "extends": "tslint-config-valorsoft",
+  "extends": "./node_modules/tslint-config-valorsoft/tslint.json",
+  "rulesDirectory": "./node_modules/codelyzer/dist/src"
+
   "rules": {
     // your customization
   }

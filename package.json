@@ -2,7 +2,7 @@
   "name": "tslint-config-valorsoft",
   "version": "0.0.2",
   "description": "Valor Software's TSLint config, following our styleguide",
-  "main": "index.js",
+  "main": "tsling.json",
   "scripts": {
     "flow.changelog": "./node_modules/.bin/conventional-changelog -i CHANGELOG.md -s -p angular -v",
     "flow.github-release": "./node_modules/.bin/conventional-github-releaser -p angular",
