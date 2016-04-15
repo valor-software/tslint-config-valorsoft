@@ -16,7 +16,7 @@ npm install tslint-config-valorsoft
 ```js
 // tslint.json
 {
-  "extends": "./node_modules/tslint-config-valorsoft/tslint.json",
+  "extends": "tslint-config-valorsoft",
   "rulesDirectory": "./node_modules/codelyzer/dist/src"
 
   "rules": {
