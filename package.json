@@ -44,6 +44,6 @@
     "mocha": "2.4.5",
     "pre-commit": "1.1.2",
     "strip-json-comments": "2.0.1",
-    "typescript": "1.8.9"
+    "typescript": "1.8.10"
   }
 }
