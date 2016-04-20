@@ -1,3 +1,13 @@
+<a name="0.0.5"></a>
+## [0.0.5](https://github.com/valor-software/tslint-config-valorsoft/compare/v0.0.4...v0.0.5) (2016-04-20)
+
+
+### Features
+
+* **package:** codelyzer versions updated && included new rules ([b4b0e9d](https://github.com/valor-software/tslint-config-valorsoft/commit/b4b0e9d))
+
+
+
 <a name="0.0.4"></a>
 ## [0.0.4](https://github.com/valor-software/tslint-config-valorsoft/compare/v0.0.3...v0.0.4) (2016-04-15)
 
