@@ -5,19 +5,19 @@
 [![devDependency Status](https://david-dm.org/valor-software/tslint-config-valorsoft/dev-status.svg)](https://david-dm.org/valor-software/tslint-config-valorsoft#info=devDependencies)
 
 ## Philosophy
-- contains all rules explicitely
+- contains all rules explicitly
 - almost all rules enabled
 
 ## Install
 ```sh
-npm install tslint-config-valorsoft
+npm install tslint-config-valorsoft --save
 ```
 
 ```js
 // tslint.json
 {
-  "extends": "./node_modules/tslint-config-valorsoft/tslint.json",
-  "rulesDirectory": "./node_modules/codelyzer/dist/src"
+  "extends": "tslint-config-valorsoft",
+  "rulesDirectory": "./node_modules/codelyzer",
 
   "rules": {
     // your customization

@@ -9,9 +9,9 @@ const stripComments = require('strip-json-comments');
 const config = JSON.parse(stripComments(readFile('./tslint.json')));
 const rulesInConfig = Object.keys(config.rules);
 
-const rulesInCodelyzer = fs.readdirSync('./node_modules/codelyzer/src')
-  .filter(fileName => /Rule\.ts/.test(fileName))
-  .map(fileName => path.basename(fileName, 'Rule.ts'))
+const rulesInCodelyzer = fs.readdirSync('./node_modules/codelyzer')
+  .filter(fileName => /Rule\.js/.test(fileName))
+  .map(fileName => path.basename(fileName, 'Rule.js'))
   .map(fileName => changeCase.paramCase(fileName));
 
 const rulesInTslint = fs.readdirSync('./node_modules/tslint/lib/rules')
