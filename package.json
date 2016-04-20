@@ -1,6 +1,6 @@
 {
   "name": "tslint-config-valorsoft",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Valor Software's TSLint config, following our styleguide",
   "main": "tslint.json",
   "scripts": {
