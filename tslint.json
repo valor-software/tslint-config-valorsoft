@@ -34,6 +34,8 @@
     "no-eval": true,
     "no-inferrable-types": true,
     "no-internal-module": true,
+    "no-invalid-this": true,
+    "no-reference": true,
     "no-null-keyword": true,
     "no-require-imports": false,
     "no-shadowed-variable": true,
@@ -69,6 +71,7 @@
         "variable-declaration": "nospace"
       }
     ],
+    "use-isnan": true,
     "use-strict": [true, "check-module"],
     "variable-name": [true, "ban-keywords"],
     "whitespace": [
