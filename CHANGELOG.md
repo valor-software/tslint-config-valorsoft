@@ -1,3 +1,13 @@
+<a name="1.0.1"></a>
+## [1.0.1](https://github.com/valor-software/tslint-config-valorsoft/compare/v1.0.0...v1.0.1) (2016-04-25)
+
+
+### Bug Fixes
+
+* **tslint:** disabled no-inferrable-types ([3058049](https://github.com/valor-software/tslint-config-valorsoft/commit/3058049))
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/valor-software/tslint-config-valorsoft/compare/v0.0.7...v1.0.0) (2016-04-25)
 
