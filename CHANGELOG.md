@@ -1,3 +1,9 @@
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/valor-software/tslint-config-valorsoft/compare/v0.0.7...v1.0.0) (2016-04-25)
+
+
+
+
 <a name="0.0.7"></a>
 ## [0.0.7](https://github.com/valor-software/tslint-config-valorsoft/compare/v0.0.6...v0.0.7) (2016-04-22)
 
