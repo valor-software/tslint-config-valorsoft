@@ -33,7 +33,7 @@
   "homepage": "https://github.com/valor-software/tslint-config-valorsoft#readme",
   "dependencies": {
     "codelyzer": "0.0.15",
-    "tslint": "3.8.0"
+    "tslint": "3.8.1"
   },
   "devDependencies": {
     "chai": "3.5.0",
