@@ -1,7 +1,7 @@
 {
   "name": "tslint-config-valorsoft",
   "version": "1.0.2",
-  "description": "Valor Software's TSLint config, following our styleguide",
+  "description": "TSLint config, applies angular 2 style guide",
   "main": "tslint.json",
   "scripts": {
     "flow.changelog": "./node_modules/.bin/conventional-changelog -i CHANGELOG.md -s -p angular -v",
