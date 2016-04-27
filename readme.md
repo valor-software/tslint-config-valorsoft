@@ -13,17 +13,25 @@ Follow me [![twitter](https://img.shields.io/twitter/follow/valorkin.svg?style=s
 
 ## Install
 ```sh
-npm install tslint-config-valorsoft --save
+npm install -D tslint-config-valorsoft
 ```
+
+**Note**: if you will remove direct dependencies to `tslint` and `codelyzer` from `package.json` you will always have a working `tslint` configuration
 
 ```js
 // tslint.json
 {
   "extends": "tslint-config-valorsoft",
-  "rulesDirectory": "./node_modules/codelyzer",
+  "rulesDirectory": "node_modules/codelyzer",
 
   "rules": {
     // your customization
+    // THIS IS IMPORTANT
+    // ADD THIS RULES TO YOUR `tslint.json`
+    // AND CHANGE `MP` with short name of your project
+    "directive-selector-prefix": [true, "MP"],
+    "component-selector-prefix": [true, "MP"],
+    "pipe-naming": [true, "camelCase", "MP"]
   }
 }
 ```
