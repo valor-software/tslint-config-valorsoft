@@ -42,7 +42,7 @@
     "conventional-github-releaser": "1.1.2",
     "eslint-config-valorsoft": "0.0.10",
     "mocha": "2.4.5",
-    "pre-commit": "1.1.2",
+    "pre-commit": "1.1.3",
     "strip-json-comments": "2.0.1",
     "typescript": "1.8.10"
   }
