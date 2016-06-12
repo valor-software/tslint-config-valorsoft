@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "chai": "3.5.0",
-    "change-case": "2.3.1",
+    "change-case": "3.0.0",
     "conventional-changelog-cli": "1.2.0",
     "conventional-github-releaser": "1.1.2",
     "eslint-config-valorsoft": "0.0.15",
