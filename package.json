@@ -1,6 +1,6 @@
 {
   "name": "tslint-config-valorsoft",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "TSLint config, applies angular 2 style guide",
   "main": "tslint.json",
   "scripts": {
