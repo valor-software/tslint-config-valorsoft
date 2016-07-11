@@ -50,6 +50,7 @@
     "no-unreachable": true,
     "no-unused-expression": true,
     "no-unused-variable": [true, "check-parameters"],
+    "no-unused-new": true,
     "no-use-before-declare": true,
     "no-var-keyword": true,
     "no-var-requires": false,
@@ -58,6 +59,8 @@
       true, "check-catch", "check-else", "check-open-brace", "check-whitespace"
     ],
     "one-variable-per-declaration": true,
+    "only-arrow-functions": true,
+    "ordered-imports": true,
     "quotemark": [true, "single"],
     "radix": true,
     "semicolon": [true, "always"],
@@ -102,6 +105,7 @@
     "pipe-naming": [true, "camelCase", ""],
     "component-class-suffix": true,
     "directive-class-suffix": true,
-    "import-destructuring-spacing": true
+    "import-destructuring-spacing": true,
+    "pipe-impure": false
   }
 }
