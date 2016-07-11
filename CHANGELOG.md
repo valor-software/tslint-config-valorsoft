@@ -1,3 +1,27 @@
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/valor-software/tslint-config-valorsoft/compare/v0.0.2...v1.1.0) (2016-07-11)
+
+
+### Bug Fixes
+
+* **readme:** added correct instruction how to add tslint config to app ([af11386](https://github.com/valor-software/tslint-config-valorsoft/commit/af11386))
+* **tslint:** disabled no-inferrable-types ([3058049](https://github.com/valor-software/tslint-config-valorsoft/commit/3058049))
+
+
+### Features
+
+* **package:** codelyzer updated to 0.0.18 ([bb99b22](https://github.com/valor-software/tslint-config-valorsoft/commit/bb99b22))
+* **package:** codelyzer updated to 0.0.22 ([a774836](https://github.com/valor-software/tslint-config-valorsoft/commit/a774836))
+* **package:** codelyzer versions updated && included new rules ([b4b0e9d](https://github.com/valor-software/tslint-config-valorsoft/commit/b4b0e9d))
+* **package:** codelyzer versions updated to 0.0.15 ([b8c58ff](https://github.com/valor-software/tslint-config-valorsoft/commit/b8c58ff))
+* **package:** tslint updated to 3.11 && codelyzer to 0.0.23 ([4a17eaf](https://github.com/valor-software/tslint-config-valorsoft/commit/4a17eaf))
+* **package:** update tslint to 3.10.1 & codelyzer to 0.0.19 ([0037717](https://github.com/valor-software/tslint-config-valorsoft/commit/0037717))
+* **package:** updated to tslint 3.13 && codelyzer 0.0.25 ([774bbef](https://github.com/valor-software/tslint-config-valorsoft/commit/774bbef))
+* **package:** updated to tslint 3.6.4 codelyzer 0.0.13 ([ef40c7c](https://github.com/valor-software/tslint-config-valorsoft/commit/ef40c7c))
+* **package:** updated to tslint 3.8.0 ([f52065c](https://github.com/valor-software/tslint-config-valorsoft/commit/f52065c))
+
+
+
 <a name="1.0.5"></a>
 ## [1.0.5](https://github.com/valor-software/tslint-config-valorsoft/compare/v1.0.4...v1.0.5) (2016-06-23)
 
