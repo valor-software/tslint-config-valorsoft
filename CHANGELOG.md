@@ -1,3 +1,17 @@
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/valor-software/tslint-config-valorsoft/compare/v1.0.5...v1.1.1) (2016-08-05)
+
+
+### Bug Fixes
+
+* **ordered-imports:** disabled some rules ([3e943d0](https://github.com/valor-software/tslint-config-valorsoft/commit/3e943d0))
+
+### Features
+
+* **package:** updated to tslint 3.13 && codelyzer 0.0.25 ([774bbef](https://github.com/valor-software/tslint-config-valorsoft/commit/774bbef))
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/valor-software/tslint-config-valorsoft/compare/v0.0.2...v1.1.0) (2016-07-11)
 
