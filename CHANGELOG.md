@@ -1,3 +1,14 @@
+<a name="1.1.4"></a>
+## [1.1.4](https://github.com/valor-software/tslint-config-valorsoft/compare/v1.1.1...v1.1.4) (2016-11-17)
+
+
+### Features
+
+* **package:** codelyzer version updated, deps moved to peer dependecies ([e81f1af](https://github.com/valor-software/tslint-config-valorsoft/commit/e81f1af))
+* **package:** upgrade tslint and codelyzer version ([9512d24](https://github.com/valor-software/tslint-config-valorsoft/commit/9512d24))
+
+
+
 <a name="1.1.3"></a>
 ## [1.1.3](https://github.com/valor-software/tslint-config-valorsoft/compare/v1.1.1...v1.1.3) (2016-11-08)
 
