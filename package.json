@@ -4,10 +4,10 @@
   "description": "TSLint config, applies angular 2 style guide",
   "main": "tslint.json",
   "scripts": {
-    "flow.changelog": "./node_modules/.bin/conventional-changelog -i CHANGELOG.md -s -p angular -v",
-    "flow.github-release": "./node_modules/.bin/conventional-github-releaser -p angular",
-    "flow.lint": "./node_modules/.bin/eslint --ignore-path .gitignore  --ext js --fix . .config",
-    "test": "npm run flow.lint && ./node_modules/.bin/mocha",
+    "flow.changelog": "conventional-changelog -i CHANGELOG.md -s -p angular -v",
+    "flow.github-release": "conventional-github-releaser -p angular",
+    "lint": "tslint test/fixture.ts -c tslint.json",
+    "test": "mocha test/config.spec.js",
     "preversion": "npm test",
     "version": "npm run flow.changelog && git add -A",
     "postversion": "git push origin master && git push --tags"
@@ -32,23 +32,22 @@
   },
   "homepage": "https://github.com/valor-software/tslint-config-valorsoft#readme",
   "peerDependencies": {
-    "codelyzer": "^1.0.0-beta.4",
-    "tslint": "^3.15.1"
+    "codelyzer": "^2.0.0-beta.1",
+    "tslint": "^4.0.0"
   },
   "devDependencies": {
-    "codelyzer": "^1.0.0-beta.4",
-    "tslint": "^3.15.1",
-    "@angular/compiler": "2.2.0",
-    "@angular/core": "2.2.0",
+    "@angular/compiler": "2.2.4",
+    "@angular/core": "2.2.4",
     "chai": "3.5.0",
     "change-case": "3.0.0",
+    "codelyzer": "2.0.0-beta.1",
     "conventional-changelog-cli": "1.2.0",
     "conventional-github-releaser": "1.1.3",
-    "eslint-config-valorsoft": "0.1.0",
-    "mocha": "3.1.2",
+    "mocha": "3.2.0",
     "pre-commit": "1.1.3",
     "rxjs": "5.0.0-beta.12",
     "strip-json-comments": "2.0.1",
+    "tslint": "4.0.2",
     "typescript": "2.0.10",
     "zone.js": "0.6.26"
   }
