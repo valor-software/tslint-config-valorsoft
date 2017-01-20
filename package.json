@@ -39,7 +39,7 @@
     "@angular/compiler": "2.2.4",
     "@angular/core": "2.2.4",
     "chai": "3.5.0",
-    "change-case": "3.0.0",
+    "change-case": "3.0.1",
     "codelyzer": "2.0.0-beta.1",
     "conventional-changelog-cli": "1.2.0",
     "conventional-github-releaser": "1.1.3",
