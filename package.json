@@ -49,6 +49,6 @@
     "strip-json-comments": "2.0.1",
     "tslint": "4.0.2",
     "typescript": "2.0.10",
-    "zone.js": "0.6.26"
+    "zone.js": "0.8.8"
   }
 }
