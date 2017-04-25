@@ -35,6 +35,26 @@ npm install -D tslint-config-valorsoft
   }
 }
 ```
+
+## After install
+You could configure:
+ - `ban-types` - https://palantir.github.io/tslint/rules/ban-types/
+ - `ban` - https://palantir.github.io/tslint/rules/ban/
+ - `import-blacklist` - https://palantir.github.io/tslint/rules/import-blacklist/
+
+Disabled:
+ - `no-parameter-properties` because it is very convenient to use `constructor(private inject:Service)`
+- `no-null-keyword` null should be used to clean references
+- `no-require-imports` - `require` is sometimes useful
+- `object-literal-sort-keys` not really useful
+- `completed-docs` forcing writing a docs, usually leads to low or harmful copy paste style documentation
+- `file-header` up to you
+- `no-parameter-properties` reading the docs is the best way to avoid confusion 
+
+TBD:
+- `promise-function-async` https://palantir.github.io/tslint/rules/promise-function-async/
+- `strict-boolean-expressions` https://palantir.github.io/tslint/rules/strict-boolean-expressions/
+- `no-boolean-literal-compare` https://palantir.github.io/tslint/rules/no-boolean-literal-compare/
 <!--
 ## What is disabled
 - `no-eq-null` - duplicates `eqeqeq:smart`

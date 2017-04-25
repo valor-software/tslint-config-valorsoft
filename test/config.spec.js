@@ -11,7 +11,7 @@ const config = JSON.parse(stripComments(readFile('./tslint.json')));
 const rulesInConfig = Object.keys(config.rules);
 
 // todo: hack for deprecated rules
-rulesInConfig.push('no-unused-variable');
+// rulesInConfig.push('no-unused-variable');
 
 const rulesInCodelyzer = fs.readdirSync('./node_modules/codelyzer')
   .filter(fileName => /Rule\.js/.test(fileName))
@@ -27,6 +27,22 @@ describe('valor config rules set', () => {
   it('should contain same amount of rules from tslint core', () => {
     expect(rulesInConfig.length).to.be
       .equal(rulesInTslint.length + rulesInCodelyzer.length);
+  });
+  it('should not contain extra rules', () => {
+    const hash = rulesInConfig.reduce((memo, value) => {
+      if (memo[value]) {
+        console.log(`duplicate ${value}`)
+      }
+      memo[value] = true;
+      return memo;
+    }, {});
+    rulesInTslint.forEach(v => hash[v] = false);
+    rulesInCodelyzer.forEach(v => hash[v] = false);
+    const extraRules = rulesInConfig.filter(v => hash[v]);
+    if (extraRules.length) {
+      console.log(JSON.serialize(extraRules));
+    }
+    expect(extraRules.length).to.be.equal(0);
   });
   it('should contain all rules from tslint core', () => {
     const missingRules = [];

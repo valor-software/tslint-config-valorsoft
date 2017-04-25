@@ -1,14 +1,29 @@
 // just dummy typescript file
-import * as configuration from './configuration';
-import {RuleFailure} from './language/rule/rule';
+import { Component, ElementRef, OnInit } from '@angular/core';
 
-export * from './language/formatter/formatter';
-
-export var Configuration = configuration;
+const num = 1;
+let me: {};
 
 export interface LintResult {
   failureCount: number;
-  failures: RuleFailure[];
   format: string;
   output: string;
+}
+
+@Component({
+  selector: 'sg-codelyzer',
+  template: `
+    <h1>Hello {{ name }}!</h1>
+  `
+})
+class CodelyzerComponent implements OnInit {
+  name = 'World';
+  field = true;
+  private _field: boolean;
+
+  constructor(public test: ElementRef) {}
+
+  ngOnInit(): void {
+    console.log('Initialized');
+  }
 }

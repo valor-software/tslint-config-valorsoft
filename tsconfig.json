@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "lib": ["dom", "es6"]
+  },
+  "include": ["./test/fixture.ts"],
+  "exclude": [
+    "node_modules"
+  ]
+}
