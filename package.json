@@ -48,7 +48,7 @@
     "pre-commit": "1.2.2",
     "rxjs": "5.3.0",
     "strip-json-comments": "2.0.1",
-    "tslint": "5.1.0",
+    "tslint": "5.2.0",
     "typescript": "2.2.2",
     "zone.js": "0.8.9"
   }
