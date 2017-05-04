@@ -11,9 +11,15 @@ Follow me [![twitter](https://img.shields.io/twitter/follow/valorkin.svg?style=s
 - contains all rules explicitly
 - almost all rules enabled
 
+## Before install
+Check version of your code editor, highly recommended to use latest version.
+
 ## Install
 ```sh
 npm install -D tslint-config-valorsoft
+
+- check install log for errors and warnings about wrong versions of required packages (tslint, codelyzer etc.)
+- if needed install or update required packages
 ```
 
 **Note**: if you will remove direct dependencies to `tslint` and `codelyzer` from `package.json` you will always have a working `tslint` configuration
@@ -29,14 +35,20 @@ npm install -D tslint-config-valorsoft
     // THIS IS IMPORTANT
     // ADD THIS RULES TO YOUR `tslint.json`
     // AND CHANGE `MP` with short name of your project
-    "directive-selector": [true, "attribute", "MP", "camelCase"],
     "component-selector": [true, "element", "MP", "kebab-case"],
+    "directive-selector": [true, "attribute", "MP", "camelCase"],
+    "no-import-side-effect": false,
+    "no-unsafe-any": false,
+    "ordered-imports": false,
     "pipe-naming": [true, "camelCase", "MP"]
   }
 }
 ```
 
 ## After install
+Setup lint command:
+ - add `--type-check` parameter to lint command in package.json. Example: `"lint": "ng lint --type-check"`;
+
 You could configure:
  - `ban-types` - https://palantir.github.io/tslint/rules/ban-types/
  - `ban` - https://palantir.github.io/tslint/rules/ban/
@@ -49,7 +61,7 @@ Disabled:
 - `object-literal-sort-keys` not really useful
 - `completed-docs` forcing writing a docs, usually leads to low or harmful copy paste style documentation
 - `file-header` up to you
-- `no-parameter-properties` reading the docs is the best way to avoid confusion 
+- `no-parameter-properties` reading the docs is the best way to avoid confusion
 
 TBD:
 - `promise-function-async` https://palantir.github.io/tslint/rules/promise-function-async/
