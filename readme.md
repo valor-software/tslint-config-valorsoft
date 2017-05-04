@@ -29,8 +29,8 @@ npm install -D tslint-config-valorsoft
     // THIS IS IMPORTANT
     // ADD THIS RULES TO YOUR `tslint.json`
     // AND CHANGE `MP` with short name of your project
-    "directive-selector-prefix": [true, "MP"],
-    "component-selector-prefix": [true, "MP"],
+    "directive-selector": [true, "attribute", "MP", "camelCase"],
+    "component-selector": [true, "element", "MP", "kebab-case"],
     "pipe-naming": [true, "camelCase", "MP"]
   }
 }
