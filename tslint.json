@@ -10,7 +10,7 @@
     ],
     "no-any": true,
     "no-empty-interface": true,
-    "no-import-side-effect": true,
+    "no-import-side-effect": false,
     "no-inferrable-types": true,
     "no-internal-module": true,
     "no-magic-numbers": true,
@@ -129,7 +129,7 @@
       true, "check-catch", "check-finally", "check-else", "check-open-brace", "check-whitespace"
     ],
     "one-variable-per-declaration": true,
-    "ordered-imports": true,
+    "ordered-imports": false,
     "prefer-function-over-method": [true, "allow-public", "allow-protected"],
     "prefer-method-signature": true,
     "prefer-template": true,
