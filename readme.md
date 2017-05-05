@@ -13,12 +13,7 @@ Follow me [![twitter](https://img.shields.io/twitter/follow/valorkin.svg?style=s
 
 ## Before install
 Check version of your code editor, highly recommended to use latest version.
-
-Example. You can have this situation in the end of log after installing:
-```sh
-npm WARN tslint-config-valorsoft@2.0.0 requires a peer of codelyzer@^3.0.0 but none was installed.
-npm WARN tslint-config-valorsoft@2.0.0 requires a peer of tslint@^5.1.0 but none was installed.
-```
+If you use angular-cli check that you have latest version and local and global versions of cli are the same.
 
 ## Install
 ```sh
@@ -27,8 +22,27 @@ npm install -D tslint-config-valorsoft
 - check install log for errors and warnings about wrong versions of required packages (tslint, codelyzer etc.)
 - if needed install or update required packages
 
+* Example. You can have this situation in the end of log after installing:
+```sh
+npm WARN tslint-config-valorsoft@2.0.0 requires a peer of codelyzer@^3.0.0 but none was installed.
+npm WARN tslint-config-valorsoft@2.0.0 requires a peer of tslint@^5.1.0 but none was installed.
+```
+It means that you have to update codelyzer and tslint to ^3.0.0 and ^5.1.0 versions (or higher).
+
 **Note**: if you will remove direct dependencies to `tslint` and `codelyzer` from `package.json` you will always have a working `tslint` configuration
 
+Edit your tslint.json:
+ - add `"extends": "tslint-config-valorsoft"` parameter before `rulesDirectory` parameter
+ - remove all previous rules
+ - add rules with editable name of project `MP`:
+```
+"component-selector": [true, "element", "MP", "kebab-case"],
+"directive-selector": [true, "attribute", "MP", "camelCase"],
+"pipe-naming": [true, "camelCase", "MP"]
+```
+ - add your custom rules
+
+Example:
 ```js
 // tslint.json
 {
@@ -40,8 +54,8 @@ npm install -D tslint-config-valorsoft
     // THIS IS IMPORTANT
     // ADD THIS RULES TO YOUR `tslint.json`
     // AND CHANGE `MP` with short name of your project
-    "component-selector": [true, "element", "MP", "kebab-case"],
     "directive-selector": [true, "attribute", "MP", "camelCase"],
+    "component-selector": [true, "element", "MP", "kebab-case"],
     "pipe-naming": [true, "camelCase", "MP"]
   }
 }
@@ -50,6 +64,9 @@ npm install -D tslint-config-valorsoft
 ## After install
 Setup lint command:
  - add `--type-check` parameter to lint command in package.json. Example: `"lint": "ng lint --type-check"`;
+
+**Note**; If you have warning `Warning: Cannot read property 'some' of undefined` after running tslint, update
+codelyzer and tslint to latest versions. For now they are codelyzer@^3.0.1 and tslint@^5.2.0
 
 You could configure:
  - `ban-types` - https://palantir.github.io/tslint/rules/ban-types/
