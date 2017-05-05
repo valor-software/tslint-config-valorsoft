@@ -17,10 +17,9 @@ Check version of your code editor, highly recommended to use latest version.
 ## Install
 ```sh
 npm install -D tslint-config-valorsoft
-
+```
 - check install log for errors and warnings about wrong versions of required packages (tslint, codelyzer etc.)
 - if needed install or update required packages
-```
 
 **Note**: if you will remove direct dependencies to `tslint` and `codelyzer` from `package.json` you will always have a working `tslint` configuration
 
@@ -37,9 +36,6 @@ npm install -D tslint-config-valorsoft
     // AND CHANGE `MP` with short name of your project
     "component-selector": [true, "element", "MP", "kebab-case"],
     "directive-selector": [true, "attribute", "MP", "camelCase"],
-    "no-import-side-effect": false,
-    "no-unsafe-any": false,
-    "ordered-imports": false,
     "pipe-naming": [true, "camelCase", "MP"]
   }
 }
