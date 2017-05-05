@@ -1,4 +1,6 @@
 # Welcome to the most strict tslint config ever
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/valor-software/tslint-config-valorsoft.svg)](https://greenkeeper.io/)
 [![npm version](https://badge.fury.io/js/tslint-config-valorsoft.svg)](http://badge.fury.io/js/tslint-config-valorsoft) [![npm downloads](https://img.shields.io/npm/dm/tslint-config-valorsoft.svg)](https://npmjs.org/tslint-config-valorsoft)
 [![Build Status](https://travis-ci.org/valor-software/tslint-config-valorsoft.svg?branch=master)](https://travis-ci.org/valor-software/tslint-config-valorsoft)
 [![Dependency Status](https://david-dm.org/valor-software/tslint-config-valorsoft.svg)](https://david-dm.org/valor-software/tslint-config-valorsoft)
