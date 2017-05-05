@@ -32,7 +32,7 @@ It means that you have to update codelyzer and tslint to ^3.0.0 and ^5.1.0 versi
 **Note**: if you will remove direct dependencies to `tslint` and `codelyzer` from `package.json` you will always have a working `tslint` configuration
 
 Edit your tslint.json:
- - add `"extends": "tslint-config-valorsoft"` parameter before `rulesDirectory` parameter
+ - add `"extends": "tslint-config-valorsoft"` before `rulesDirectory`
  - remove all previous rules
  - add rules with editable name of project `MP`:
 ```
@@ -65,7 +65,7 @@ Example:
 Setup lint command:
  - add `--type-check` parameter to lint command in package.json. Example: `"lint": "ng lint --type-check"`;
 
-**Note**; If you have warning `Warning: Cannot read property 'some' of undefined` after running tslint, update
+**Note**: If you have warning `Warning: Cannot read property 'some' of undefined` after running tslint, update
 codelyzer and tslint to latest versions. For now they are codelyzer@^3.0.1 and tslint@^5.2.0
 
 You could configure:
