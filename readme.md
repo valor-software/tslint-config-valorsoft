@@ -14,6 +14,12 @@ Follow me [![twitter](https://img.shields.io/twitter/follow/valorkin.svg?style=s
 ## Before install
 Check version of your code editor, highly recommended to use latest version.
 
+Example. You can have this situation in the end of log after installing:
+```sh
+npm WARN tslint-config-valorsoft@2.0.0 requires a peer of codelyzer@^3.0.0 but none was installed.
+npm WARN tslint-config-valorsoft@2.0.0 requires a peer of tslint@^5.1.0 but none was installed.
+```
+
 ## Install
 ```sh
 npm install -D tslint-config-valorsoft
