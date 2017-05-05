@@ -20,6 +20,7 @@ If you use angular-cli:
  For more info: https://palantir.github.io/tslint/usage/rule-flags/
 
 ## Install
+1. Install package
 ```sh
 npm install -D tslint-config-valorsoft
 ```
@@ -33,9 +34,7 @@ npm WARN tslint-config-valorsoft@2.0.0 requires a peer of tslint@^5.1.0 but none
 ```
 It means that you have to update codelyzer and tslint to ^3.0.0 and ^5.1.0 versions (or higher).
 
-**Note**: if you will remove direct dependencies to `tslint` and `codelyzer` from `package.json` you will always have a working `tslint` configuration
-
-Edit your tslint.json:
+2. Edit your tslint.json:
  - add `"extends": "tslint-config-valorsoft"` at the beginning, before `rulesDirectory`
  - remove all rules inside "rules" object
  - add your custom rules
