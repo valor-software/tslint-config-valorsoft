@@ -13,7 +13,11 @@ Follow me [![twitter](https://img.shields.io/twitter/follow/valorkin.svg?style=s
 
 ## Before install
 Check version of your code editor, highly recommended to use latest version.
-If you use angular-cli check that you have latest version and local and global versions of cli are the same.
+
+If you use angular-cli:
+ - check that you have latest version, at least 1.0.2, and local and global versions of cli are the same.
+ - disable ts lint for polyfill.ts and test.ts(in `src` folder). Add `/* tslint:disable */` at the beginning.
+ For more info: https://palantir.github.io/tslint/usage/rule-flags/
 
 ## Install
 ```sh
@@ -32,15 +36,16 @@ It means that you have to update codelyzer and tslint to ^3.0.0 and ^5.1.0 versi
 **Note**: if you will remove direct dependencies to `tslint` and `codelyzer` from `package.json` you will always have a working `tslint` configuration
 
 Edit your tslint.json:
- - add `"extends": "tslint-config-valorsoft"` before `rulesDirectory`
- - remove all previous rules
- - add rules with editable name of project `MP`:
+ - add `"extends": "tslint-config-valorsoft"` at the beginning, before `rulesDirectory`
+ - remove all rules inside "rules" object
+ - add your custom rules
+ - add rules with editable shortname of your project.
 ```
 "component-selector": [true, "element", "MP", "kebab-case"],
 "directive-selector": [true, "attribute", "MP", "camelCase"],
 "pipe-naming": [true, "camelCase", "MP"]
 ```
- - add your custom rules
+**Note**: `MP` is a placeholder, it is your prefix for components. If you don't need it you should change MP to empty string - `[true, "camelCase", ""]`
 
 Example:
 ```js
@@ -63,7 +68,7 @@ Example:
 
 ## After install
 Setup lint command:
- - add `--type-check` parameter to lint command in package.json. Example: `"lint": "ng lint --type-check"`;
+ - add `--type-check` parameter to lint command in `package.json`. Example: `"lint": "ng lint --type-check"`;
 
 **Note**: If you have warning `Warning: Cannot read property 'some' of undefined` after running tslint, update
 codelyzer and tslint to latest versions. For now they are codelyzer@^3.0.1 and tslint@^5.2.0
