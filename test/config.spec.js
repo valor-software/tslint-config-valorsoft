@@ -52,7 +52,7 @@ describe('valor config rules set', () => {
       }
     });
     if (missingRules.length !== 0) {
-      throw new Error(missingRules);
+      throw new Error(missingRules.join(', '));
     }
   });
   it('should not contain deprecated rules', () => {
@@ -75,7 +75,7 @@ describe('valor config rules set', () => {
       }
     });
     if (missingRules.length !== 0) {
-      throw new Error(missingRules);
+      throw new Error(missingRules.join(', '));
     }
 
     // rulesInCodelyzer.forEach(rule => {
