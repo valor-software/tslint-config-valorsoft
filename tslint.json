@@ -16,6 +16,7 @@
     "no-magic-numbers": true,
     "no-namespace": true,
     "no-non-null-assertion": true,
+    "no-parameter-reassignment": true,
     "no-reference": true,
     "no-unnecessary-type-assertion": true,
     "no-var-requires": true,
@@ -64,6 +65,7 @@
     "no-sparse-arrays": true,
     "no-string-literal": true,
     "no-string-throw": true,
+    "no-submodule-imports": false,
     "no-switch-case-fall-through": true,
     "no-this-assignment": true,
     "no-unbound-method": true,
@@ -93,6 +95,7 @@
     "max-classes-per-file": [true, 1],
     "max-line-length": [true, 120],
     "no-default-export": true,
+    "no-duplicate-imports": true,
     "no-mergeable-namespace": true,
     "no-require-imports": false,
     "object-literal-sort-keys": false,
@@ -148,6 +151,7 @@
     "return-undefined": true,
     "semicolon": [true, "always"],
     "space-before-function-paren": [true, "never"],
+    "space-within-parens": 0,
     "switch-final-break": true,
     "type-literal-delimiter": true,
     "variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore"],
@@ -183,6 +187,8 @@
     "import-destructuring-spacing": false,
     "no-unused-css": false,
     "pipe-impure": false,
-    "use-pipe-decorator": false
+    "use-pipe-decorator": false,
+    "contextual-life-cycle": true,
+    "decorator-not-allowed": true
   }
 }

@@ -32,8 +32,8 @@
   },
   "homepage": "https://github.com/valor-software/tslint-config-valorsoft#readme",
   "peerDependencies": {
-    "codelyzer": "^3.1.2",
-    "tslint": "^5.5.0"
+    "codelyzer": "^3.2.0",
+    "tslint": "^5.7.0"
   },
   "devDependencies": {
     "@angular/compiler": "4.3.2",
