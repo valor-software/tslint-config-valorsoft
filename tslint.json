@@ -195,6 +195,6 @@
     "no-implicit-dependencies": true,
     "no-redundant-jsdoc":true,
     "no-return-await": true,
-    "no-unnecessary-class": true
+    "no-unnecessary-class": ["allow-empty-class", "allow-static-only"]
   }
 }
