@@ -38,7 +38,7 @@
     "unified-signatures": true,
 
     "await-promise": true,
-    "ban": false,
+    "ban": [true, ["fit"], ["fdescribe"], ["xit"], ["xdescribe"]],
     "curly": true,
     "forin": true,
     "import-blacklist": [true, "rxjs", "rxjs/Rx", "lodash"],
