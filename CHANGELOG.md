@@ -1,3 +1,21 @@
+<a name="2.2.0"></a>
+# [2.2.0](https://github.com/valor-software/tslint-config-valorsoft/compare/v2.1.1...v2.2.0) (2018-05-17)
+
+
+### Bug Fixes
+
+* **rules:** disabled prefer-for-of, no-magic-numbers, prefer-object-spread ([#148](https://github.com/valor-software/tslint-config-valorsoft/issues/148)) ([14b1429](https://github.com/valor-software/tslint-config-valorsoft/commit/14b1429))
+
+
+### Features
+
+* **core:** add ban for fit, fdescribe, xit, xdescribe ([#152](https://github.com/valor-software/tslint-config-valorsoft/issues/152)) ([f1767de](https://github.com/valor-software/tslint-config-valorsoft/commit/f1767de))
+* **core:** upgrade to latest tslint, codelyzer ([#149](https://github.com/valor-software/tslint-config-valorsoft/issues/149)) ([25237b3](https://github.com/valor-software/tslint-config-valorsoft/commit/25237b3))
+* **lint:** remove deprecated rule typeof-compare ([#153](https://github.com/valor-software/tslint-config-valorsoft/issues/153)) ([a8c123c](https://github.com/valor-software/tslint-config-valorsoft/commit/a8c123c))
+* **package:** rules set updated ([0f71125](https://github.com/valor-software/tslint-config-valorsoft/commit/0f71125))
+
+
+
 <a name="2.1.1"></a>
 ## [2.1.1](https://github.com/valor-software/tslint-config-valorsoft/compare/v2.1.0...v2.1.1) (2017-09-11)
 
