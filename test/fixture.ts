@@ -19,7 +19,7 @@ export interface LintResult {
 class CodelyzerComponent implements OnInit {
   name = 'World';
   field = true;
-  private _field: boolean;
+  private readonly _field: boolean;
 
   constructor(public test: ElementRef) {}
 
