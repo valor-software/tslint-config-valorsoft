@@ -35,8 +35,9 @@ npm WARN tslint-config-valorsoft@2.0.0 requires a peer of tslint@^5.1.0 but none
 It means that you have to update codelyzer and tslint to ^3.0.0 and ^5.1.0 versions (or higher).
 
 2. Edit your tslint.json:
- - add `"extends": "tslint-config-valorsoft"` at the beginning, before `rulesDirectory`
- - remove all rules inside "rules" object
+ - add `"extends": "tslint-config-valorsoft"` 
+ or `"extends": ["tslint-config-valorsoft", "tslint-config-valorsoft/tslint-angular.json"],` for angular projects at the beginning, before `rulesDirectory`
+ - remove all rules inside `"rules"` object
  - add your custom rules
  - add rules with editable shortname of your project.
 ```
@@ -50,7 +51,7 @@ Example:
 ```js
 // tslint.json
 {
-  "extends": "tslint-config-valorsoft",
+  "extends": ["tslint-config-valorsoft", "tslint-config-valorsoft/tslint-angular.json"],
   "rulesDirectory": "node_modules/codelyzer",
 
   "rules": {

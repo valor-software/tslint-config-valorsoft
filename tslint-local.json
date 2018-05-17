@@ -1,3 +1,4 @@
 {
-  "extends": ["./tslint.json", "./tslint-angular.json"]
+  "extends": ["./tslint.json", "./tslint-angular.json"],
+  "rulesDirectory": "node_modules/codelyzer"
 }
